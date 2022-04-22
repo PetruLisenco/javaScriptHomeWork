@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//задание 1)
+let a = 1, b = 1, c, d;
+
+/*
+2, как ++а добавляет 1
+*/
+c = ++a;
+console.log(c);
+
+/*
+1, b++ не добавляет 1, будет добавлять со второва вызова.
+*/
+d = b++;
+console.log(d);
+
+/*
+5, как с у нас 2, к а прибавляеца 1 равняеца 3, 2+3=5.
+*/
+c = 2 + ++a;
+console.log(c);
+
+/*
+4, к b присваеца 1 со второва вызова, 2+2=4.
+*/
+d = 2 + b++;
+console.log(d);
+console.log(a);
+console.log(b);
+
+//задание 2)
+"use strict";
+let a = 2;
+let x = 1 + (a *= 2);
+/*
+2*=2(два будет умножаца на 2 и a будет 4) и 1+4=5, x будет 5.
+*/console.log(x);
+  console.log(a);
+
+//задание 3)
+let a=prompt(`введите первое число`);
+let b=prompt(`введите второе число`);
+if(a>0 && b>0){
+    console.log(a-b);
+}else if(a<0 && b<0){
+    console.log(a*b);
+}
+else if(a<0 && b>0){
+    console.log(a+b);
+}
+
+//задание 4)
+
+</script>
+</body>
+</html>
